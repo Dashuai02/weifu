@@ -1,0 +1,41 @@
+server:
+  port: 8089
+#mybatis配置
+mybatis:
+  type-aliases-package: com.weifu.spring.entity
+  config-location: classpath:/mybatis/mybatis-config.xml
+#  映射文件地址
+  mapper-locations: classpath:/mybatis/mapper/*.xml
+# 错误写法： config-location: classpath:mybatis/mybatis-config.xml
+# 错误写法： mapper-location: classpath:mybatis/mapper/*.xml
+
+#spring配置
+spring:
+  application:
+    name: weifu-second
+  datasource:
+    type: com.alibaba.druid.pool.DruidDataSource
+    driver-class-name: com.mysql.cj.jdbc.Driver
+#    新版数据库驱动调用后会报时区错误在url添加：serverTimezone=UTC jdbc 6.0以上都有这个问题
+#    useUnicode=true  表示使用Unicode字符，因此可以使用中文
+#    characterEncoding=utf8  设置编码方式
+#    useSSL=true   设置安全连接
+#    serverTimezone=UTC    设置全球标准时间
+#    url: jdbc:mysql://localhost:3306/weifu?characterEncoding=utf-8&serverTimezone=UTC
+    url: jdbc:mysql://172.18.0.200:3306/school?characterEncoding=utf-8&serverTimezone=UTC
+#    ?useUnicode=true&characterEncoding=utf-8
+#    username: roots
+#    password: 123456
+    username: root
+    password: root
+#    eureka配置 注册服务
+eureka:
+  client:
+    service-url:
+      defaultZone: http://localhost:7001/eureka/,http://localhost:7003/eureka/
+    #      修改默认描述n
+  instance:
+    instance-id: springcloud-weifu-second8080info
+#info配置 即eureka后台instance里后面链接内容 可以介绍服务
+info:
+  app.name: weifu-springCloud

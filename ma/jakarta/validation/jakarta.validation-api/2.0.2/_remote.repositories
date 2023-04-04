@@ -1,0 +1,6 @@
+#NOTE: This is a Maven Resolver internal implementation file, its format can be changed without prior notice.
+#Tue Feb 28 18:55:54 CST 2023
+jakarta.validation-api-2.0.2.jar>mirror=
+jakarta.validation-api-2.0.2.pom>central=
+jakarta.validation-api-2.0.2.pom>mirror=
+jakarta.validation-api-2.0.2.jar>central=

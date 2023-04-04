@@ -1,0 +1,6 @@
+#NOTE: This is a Maven Resolver internal implementation file, its format can be changed without prior notice.
+#Tue Feb 28 18:55:54 CST 2023
+annotations-13.0.jar>central=
+annotations-13.0.pom>central=
+annotations-13.0.pom>mirror=
+annotations-13.0.jar>mirror=

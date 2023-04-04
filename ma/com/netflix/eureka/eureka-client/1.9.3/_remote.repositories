@@ -1,0 +1,5 @@
+#NOTE: This is a Maven Resolver internal implementation file, its format can be changed without prior notice.
+#Fri Mar 10 10:53:38 CST 2023
+eureka-client-1.9.3.jar>central=
+eureka-client-1.9.3.pom>central=
+eureka-client-1.9.3-sources.jar>central=

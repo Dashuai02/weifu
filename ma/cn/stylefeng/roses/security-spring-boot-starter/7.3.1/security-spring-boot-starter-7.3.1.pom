@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+
+    <parent>
+        <groupId>cn.stylefeng.roses</groupId>
+        <artifactId>kernel-d-security</artifactId>
+        <version>7.3.1</version>
+        <relativePath>../pom.xml</relativePath>
+    </parent>
+
+    <artifactId>security-spring-boot-starter</artifactId>
+
+    <packaging>jar</packaging>
+
+    <dependencies>
+
+        <!--xss模块-->
+        <dependency>
+            <groupId>cn.stylefeng.roses</groupId>
+            <artifactId>security-sdk-xss</artifactId>
+            <version>${roses.version}</version>
+        </dependency>
+
+        <!--threadLocal清除器-->
+        <dependency>
+            <groupId>cn.stylefeng.roses</groupId>
+            <artifactId>security-sdk-clear-threadlocal</artifactId>
+            <version>${roses.version}</version>
+        </dependency>
+
+        <!--图形验证码模块-->
+        <dependency>
+            <groupId>cn.stylefeng.roses</groupId>
+            <artifactId>security-sdk-captcha</artifactId>
+            <version>${roses.version}</version>
+        </dependency>
+
+        <!--count模块-->
+        <dependency>
+            <groupId>cn.stylefeng.roses</groupId>
+            <artifactId>security-sdk-count</artifactId>
+            <version>${roses.version}</version>
+        </dependency>
+
+        <!--黑白名单校验-->
+        <dependency>
+            <groupId>cn.stylefeng.roses</groupId>
+            <artifactId>security-sdk-black-white</artifactId>
+            <version>${roses.version}</version>
+        </dependency>
+
+        <!--请求响应加密解密模块-->
+        <dependency>
+            <groupId>cn.stylefeng.roses</groupId>
+            <artifactId>security-sdk-request-encrypt-and-decode</artifactId>
+            <version>${roses.version}</version>
+        </dependency>
+
+        <!--数据库加密解密模块-->
+        <dependency>
+            <groupId>cn.stylefeng.roses</groupId>
+            <artifactId>security-sdk-database-field</artifactId>
+            <version>${roses.version}</version>
+        </dependency>
+
+        <!--CORS过滤器，默认不开启-->
+        <dependency>
+            <groupId>cn.stylefeng.roses</groupId>
+            <artifactId>security-sdk-cors</artifactId>
+            <version>${roses.version}</version>
+        </dependency>
+
+    </dependencies>
+
+</project>

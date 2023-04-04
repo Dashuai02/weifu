@@ -1,0 +1,6 @@
+#NOTE: This is a Maven Resolver internal implementation file, its format can be changed without prior notice.
+#Tue Feb 28 18:55:54 CST 2023
+javax.activation-api-1.2.0.pom>mirror=
+javax.activation-api-1.2.0.jar>mirror=
+javax.activation-api-1.2.0.jar>central=
+javax.activation-api-1.2.0.pom>central=

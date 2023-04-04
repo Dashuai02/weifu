@@ -1,0 +1,6 @@
+#NOTE: This is a Maven Resolver internal implementation file, its format can be changed without prior notice.
+#Tue Feb 28 18:55:54 CST 2023
+mockito-core-3.6.28.pom>central=
+mockito-core-3.6.28.pom>mirror=
+mockito-core-3.6.28.jar>mirror=
+mockito-core-3.6.28.jar>central=

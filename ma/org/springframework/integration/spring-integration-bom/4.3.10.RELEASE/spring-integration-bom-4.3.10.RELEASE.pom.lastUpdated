@@ -1,0 +1,5 @@
+#NOTE: This is a Maven Resolver internal implementation file, its format can be changed without prior notice.
+#Thu Mar 09 11:36:27 CST 2023
+http\://0.0.0.0/.error=Could not transfer artifact org.springframework.integration\:spring-integration-bom\:pom\:4.3.10.RELEASE from/to maven-default-http-blocker (http\://0.0.0.0/)\: Blocked mirror for repositories\: [spring-snapshots (http\://repo.spring.io/snapshot, default, releases+snapshots), spring-milestones (http\://repo.spring.io/milestone, default, releases)]
+https\://repo.maven.apache.org/maven2/.lastUpdated=1678332987273
+@default-maven-default-http-blocker-http\://0.0.0.0/.lastUpdated=1678332987114

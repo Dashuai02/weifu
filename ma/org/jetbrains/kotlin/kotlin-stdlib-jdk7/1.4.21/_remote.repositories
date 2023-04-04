@@ -1,0 +1,6 @@
+#NOTE: This is a Maven Resolver internal implementation file, its format can be changed without prior notice.
+#Tue Feb 28 18:55:54 CST 2023
+kotlin-stdlib-jdk7-1.4.21.pom>mirror=
+kotlin-stdlib-jdk7-1.4.21.jar>mirror=
+kotlin-stdlib-jdk7-1.4.21.jar>central=
+kotlin-stdlib-jdk7-1.4.21.pom>central=

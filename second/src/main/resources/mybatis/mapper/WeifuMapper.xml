@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Config 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.weifu.mapper.WeifuMapper">
+
+    <select id="checkTheBase" resultType="com.weifu.spring.entity.Wef" parameterType="java.util.Map">
+        SELECT ss.*
+        FROM school_student ss
+    </select>
+
+
+    <select id="selectLastMonth" resultType="com.weifu.spring.entity.Wef" parameterType="java.util.Map">
+        SELECT *
+        FROM weifu_base
+        WHERE date_format(date, '%Y %m') = date_format(
+                DATE_SUB(curdate(), INTERVAL 1 MONTH ),
+                '%Y %m')
+    </select>
+
+</mapper>

@@ -1,0 +1,6 @@
+# Project exclude paths
+/eureka/target/
+/eureka-03/target/
+/first/target/
+/second/target/
+/third/target/

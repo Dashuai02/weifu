@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+
+    <parent>
+        <groupId>cn.stylefeng.roses</groupId>
+        <artifactId>kernel-s-system</artifactId>
+        <version>7.3.1</version>
+        <relativePath>../pom.xml</relativePath>
+    </parent>
+
+    <artifactId>system-api</artifactId>
+
+    <packaging>jar</packaging>
+
+    <dependencies>
+
+        <!--数据拓展的api-->
+        <dependency>
+            <groupId>cn.stylefeng.roses</groupId>
+            <artifactId>expand-api</artifactId>
+            <version>${roses.version}</version>
+        </dependency>
+
+        <!--参数校验模块的api-->
+        <dependency>
+            <groupId>cn.stylefeng.roses</groupId>
+            <artifactId>validator-api</artifactId>
+            <version>${roses.version}</version>
+        </dependency>
+        <dependency>
+            <groupId>cn.stylefeng.roses</groupId>
+            <artifactId>validator-api-table-unique</artifactId>
+            <version>${roses.version}</version>
+        </dependency>
+
+        <!--config模块的api-->
+        <dependency>
+            <groupId>cn.stylefeng.roses</groupId>
+            <artifactId>config-api</artifactId>
+            <version>${roses.version}</version>
+        </dependency>
+
+        <!--资源扫描器的api-->
+        <!--ResourceServiceApi需要用scanner-api的ResourceDefinition相关类-->
+        <dependency>
+            <groupId>cn.stylefeng.roses</groupId>
+            <artifactId>scanner-api</artifactId>
+            <version>${roses.version}</version>
+        </dependency>
+
+        <!--auth模块的api-->
+        <!--需要用到LoginUser这个类，所以要引用一下auth-api-->
+        <dependency>
+            <groupId>cn.stylefeng.roses</groupId>
+            <artifactId>auth-api</artifactId>
+            <version>${roses.version}</version>
+        </dependency>
+
+        <!--字典的api-->
+        <!--多语言类型，存在于字典表-->
+        <dependency>
+            <groupId>cn.stylefeng.roses</groupId>
+            <artifactId>dict-api</artifactId>
+            <version>${roses.version}</version>
+        </dependency>
+
+        <!--web-->
+        <!--ResourcePersistenceApi会用到web，用在提供feign接口时-->
+        <dependency>
+            <groupId>javax.servlet</groupId>
+            <artifactId>javax.servlet-api</artifactId>
+            <scope>provided</scope>
+        </dependency>
+        <dependency>
+            <groupId>org.springframework</groupId>
+            <artifactId>spring-web</artifactId>
+            <scope>provided</scope>
+        </dependency>
+        <dependency>
+            <groupId>com.fasterxml.jackson.core</groupId>
+            <artifactId>jackson-annotations</artifactId>
+        </dependency>
+
+    </dependencies>
+
+</project>
